@@ -1,0 +1,59 @@
+# Rules in this file were initially inferred by Visual Studio IntelliCode from the C:\Users\samue\Desktop\MyGitHub\Delegates_Tutorial_C_Sharp\ codebase based on best match to current usage at 10/9/2021
+# You can modify the rules from these initially generated values to suit your own policies
+# You can learn more about editorconfig here: https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference
+[*.cs]
+
+
+#Core editorconfig formatting - indentation
+
+#use hard tabs for indentation
+indent_style = tab
+
+#Formatting - organize using options
+
+#sort System.* using directives alphabetically, and place them before other usings
+dotnet_sort_system_directives_first = true
+
+#Formatting - spacing options
+
+#do not place space characters after the opening parenthesis and before the closing parenthesis of a method call
+csharp_space_between_method_call_parameter_list_parentheses =true
+#place a space character after the opening parenthesis and before the closing parenthesis of a method declaration parameter list.
+csharp_space_between_method_declaration_parameter_list_parentheses =true
+
+#Style - implicit and explicit types
+
+#prefer explicit type over var in all cases, unless overridden by another code style rule
+csharp_style_var_elsewhere = false:suggestion
+#prefer explicit type over var to declare variables with built-in system types such as int
+csharp_style_var_for_built_in_types = false:suggestion
+
+#Style - language keyword and framework type options
+
+#prefer the language keyword for local variables, method parameters, and class members, instead of the type name, for types that have a keyword to represent them
+dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
+
+#Style - modifier options
+
+#do not prefer accessibility modifiers to be specified
+dotnet_style_require_accessibility_modifiers = never:suggestion
+
+#Style - Modifier preferences
+
+#when this rule is set to a list of modifiers, prefer the specified ordering.
+csharp_preferred_modifier_order = public,internal,private,static:suggestion
+
+#Style - qualification options
+
+#prefer fields not to be prefaced with this. or Me. in Visual Basic
+dotnet_style_qualification_for_field = false:suggestion
+csharp_indent_braces=false
+insert_final_newline=true
+csharp_space_between_method_declaration_name_and_open_parenthesis=true
+csharp_space_between_method_declaration_empty_parameter_list_parentheses=true
+csharp_space_between_method_call_name_and_opening_parenthesis=true
+csharp_space_between_method_call_empty_parameter_list_parentheses=true
+csharp_space_between_parentheses=false
+csharp_space_after_cast=true
+csharp_space_before_open_square_brackets=true
+csharp_space_before_comma=true
